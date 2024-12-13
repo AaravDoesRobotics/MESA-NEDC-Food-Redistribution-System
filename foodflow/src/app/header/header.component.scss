@@ -1,13 +1,13 @@
 header{
     background: white;
     padding: 0;
-    border-bottom: 1px solid #e72929;
+    border-bottom: 1px solid green;
 }
 a{
-    color:#af1313
+    color:green
 }
 a:hover{
-    background: #e72929;
+    background: green;
     color: white;
 }
 .container{
@@ -32,3 +32,26 @@ nav ul li a {
     display: inline-block;
     text-decoration: none;
 }
+.header-image {
+    text-align: center;
+    margin-top: 1em;
+}
+.header-image img{
+    width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.header-image .overlay-text {
+    position: absolute; /* Position relative to the parent */
+    top: 30%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: black; /* Text color */
+    font-size: 2em; /* Adjust text size */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for better visibility */
+    text-align: center;
+  }

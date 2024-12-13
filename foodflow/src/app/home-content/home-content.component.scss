@@ -1,0 +1,26 @@
+html, body {
+    height: 100%; /* Ensure full page height */
+    padding: 0;
+    overflow-y: scroll; /* Enable vertical scrolling if content exceeds viewport */
+  }
+  
+  .content {
+    min-height: 150vh; /* Ensure content is long enough to trigger scrolling */
+    text-align: center;
+  }
+  :-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb (scrolling part) color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovered */
+  }
