@@ -1,5 +1,5 @@
 /* Header Styling */
- .mat-toolbar {
+ .header {
     background: linear-gradient(135deg, green, white); /* Gradient background */
     padding: 15px 30px; /* Spacing inside the header */
     color: black; /* Text color */
@@ -30,14 +30,14 @@
   }
   
   /* Navbar Container */
- .header nav {
+ .header {
     display: flex;
     align-items: center;
     gap: 30px; /* Space between navbar items */
   }
   
   /* Navbar Links */
-  .header nav a {
+  .header .AboutUs .SignUp .Login {
     color: black;
     font-size: 16px;
     text-decoration: none;
@@ -48,7 +48,7 @@
   
   /* Hover effect for navbar links */
   /* Apply background color to all mat-buttons */
-.header {
+.header .AboutUs .SignUp .Login{
     background-color: #388e3c;
     color: white;
     padding: 10px 20px;
@@ -57,21 +57,18 @@
   }
   
   /* Hover effect for mat-button */
-  .header .mat-button:hover {
+   .AboutUs:hover {
     background-color: #2c6c2f;
   }
   
-  /* Apply custom color and styling to buttons with specific classes like mat-primary or mat-accent */
-  .header .mat-button.mat-primary {
-    background-color: #1976d2;
-    color: white;
+  
+  .SignUp:hover {
+    background-color: #2c6c2f;
   }
   
-  .header .mat-button.mat-accent {
-    background-color: #d32f2f;
-    color: white;
+  .Login:hover {
+    background-color: #2c6c2f;
   }
-  
 
   
 
@@ -109,26 +106,26 @@
   
   /* Mobile responsiveness for header */
   @media (max-width: 768px) {
-     .mat-toolbar {
+     .header {
       flex-direction: column;
       text-align: center;
       padding: 20px;
     }
   
-    .mat-toolbar nav {
+    .header nav {
       flex-direction: column;
       gap: 10px;
     }
   
-     .mat-toolbar .span {
+     .header {
       margin-bottom: 20px;
     }
   }
   @media (max-width: 600px) {
-     .mat-toolbar {
+     .header {
       font-size: 14px;
     }
-     .example-card {
+     .header {
       width: 100%;
     }
   }
@@ -156,3 +153,5 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for better visibility */
     text-align: center;
   }
+
+ 
