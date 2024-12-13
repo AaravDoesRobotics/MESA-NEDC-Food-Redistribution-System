@@ -1,17 +1,19 @@
-<header>
-    <div class="container">
-        <a href="#" routerLink="/"class="logo">FoodFlow!</a>
-        <nav>
-            <ul>
-                <li><a href="#" routerLink="/aboutus-page">About Us</a></li>
-                <li><a href="#" routerLink="/signup-page">Sign Up</a></li> 
-                <li><a href="#" routerLink="/login-page">Log In</a></li>
-                
-            </ul>
-        </nav>
-    </div>
-</header>
+
+<mat-toolbar  class="header"color="green">
+    <img src="images/Three-part_cycle_diagram.png" alt="Logo" class="logo">
+    <header>FoodFlow!</header>
+    <span class="toolbar-spacer"></span>
+    <button mat-button class="AboutUs">About Us</button>
+    <button mat-button class="SignIp">Sign Up</button>
+    <button mat-button class="Login">Log In</button>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+      </div>
+  </mat-toolbar>
+  
 <div class="header-image">
     <img src="./images/image.png" alt="Header Image">
     <div class="overlay-text">FoodFlow! Help Us to Connect Restaurants to the Homeless</div>
 </div>
+

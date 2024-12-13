@@ -1,43 +1,144 @@
-header{
-    background: white;
-    padding: 0;
-    border-bottom: 1px solid green;
-}
-a{
-    color:green
-}
-a:hover{
-    background: green;
-    color: white;
-}
-.container{
-    margin: 0 auto;
+/* Header Styling */
+ .mat-toolbar {
+    background: linear-gradient(135deg, green, white); /* Gradient background */
+    padding: 15px 30px; /* Spacing inside the header */
+    color: black; /* Text color */
     display: flex;
-    justify-content: space-between;
-}
-a.logo{
-    font-weight: bold;
-    padding: 1em;
-}
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Makes the list items inline */
-    gap: 1em; /* Optional: Adds space between tabs */
-}
+    justify-content: flex-end; /* Space between elements */
+    align-items: right; /* Align items vertically */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow below header */
+    position: sticky; /* Make the header sticky at the top */
+    top: 0;
+    z-index: 10; /* Make sure the header stays on top */
+  }
 
-nav ul li a {
-    padding: 1em;
-    display: inline-block;
+
+  /* Header Logo */
+  .logo {
+    font-weight: bold;
+    height: 40px; /* Adjust the size as needed */
+    margin-left: 0px; /* Space between logo and the first button */
+    font-size: 24px; /* Larger font for the logo */
+    letter-spacing: 1px; /* Letter spacing for the logo text */
+    color: black;
+    text-transform: uppercase; /* Make logo text uppercase */
+    cursor: pointer;
+    justify-content: flex-start;
+  }
+  .toolbar-spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* Navbar Container */
+ .header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between navbar items */
+  }
+  
+  /* Navbar Links */
+  .header nav a {
+    color: black;
+    font-size: 16px;
     text-decoration: none;
-}
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for navbar links */
+  /* Apply background color to all mat-buttons */
+.header {
+    background-color: #388e3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for mat-button */
+  .header .mat-button:hover {
+    background-color: #2c6c2f;
+  }
+  
+  /* Apply custom color and styling to buttons with specific classes like mat-primary or mat-accent */
+  .header .mat-button.mat-primary {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  .header .mat-button.mat-accent {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+
+  
+
+  
+  /* Search Bar (Optional, if you have a search option in the header) */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+    .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  
+ .search-bar button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+   .search-bar button:hover {
+    background-color: #2c6c2f;
+  }
+  
+  /* Mobile responsiveness for header */
+  @media (max-width: 768px) {
+     .mat-toolbar {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .mat-toolbar nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+     .mat-toolbar .span {
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+     .mat-toolbar {
+      font-size: 14px;
+    }
+     .example-card {
+      width: 100%;
+    }
+  }
+    
 .header-image {
     text-align: center;
     margin-top: 1em;
 }
 .header-image img{
-    width: 800px;
+    width: 1500px;
     height: auto;
     display: block;
     margin: 0 auto;
