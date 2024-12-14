@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 const routes: Routes = [
   { path: 'sign-up-page', component: SignUpPageComponent }, // About page
   { path: '', component: LandingPageComponent },  // Default route to AppComponent
+  
 ];
 
 @NgModule({
