@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { FooterComponent } from './footer/footer.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     HomeContentComponent,
     FooterComponent,
+    SignUpPageComponent,
    
     
   ],
