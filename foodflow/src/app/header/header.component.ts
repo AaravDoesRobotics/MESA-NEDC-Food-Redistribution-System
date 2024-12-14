@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: false,
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  constructor(private router: Router) {}
 
+  goToSignUp() {
+    this.router.navigate(['/sign-up-page']); // Replace 'sign-up' with your actual route path
+  }
 }

@@ -13,7 +13,5 @@ import { Router } from '@angular/router';
 export class SignUpPageComponent {
   constructor(private router: Router) {}
 
-  goToSignIn() {
-    this.router.navigate(['/signin']);
-  }
+  
 }

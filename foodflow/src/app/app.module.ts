@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HeaderComponent } from './header/header.component';
 import { HomeContentComponent } from './home-content/home-content.component';
-
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
@@ -17,6 +19,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { FooterComponent } from './footer/footer.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,7 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
     HomeContentComponent,
     FooterComponent,
     SignUpPageComponent,
+    LandingPageComponent,
    
     
   ],
@@ -38,7 +42,11 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
     MatCardModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     provideClientHydration(withEventReplay()),
