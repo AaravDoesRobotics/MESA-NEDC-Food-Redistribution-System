@@ -20,6 +20,7 @@ import { MatListModule } from '@angular/material/list';
 import { FooterComponent } from './footer/footer.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     FooterComponent,
     SignUpPageComponent,
     LandingPageComponent,
+    LoginPageComponent,
    
     
   ],

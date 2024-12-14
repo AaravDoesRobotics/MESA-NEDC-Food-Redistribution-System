@@ -14,10 +14,13 @@ export class AppComponent {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
-      this.showHomeContent = event.url !== '/sign-up-page';
+      this.showHomeContent = !['/sign-up-page', '/login-page'].includes(event.url);
     });
   }
   goToSignUp() {
     this.router.navigate(['/sign-up-page']);
+  }
+  goToLogin() {
+    this.router.navigate(['/login-page']);
   }
 }

@@ -13,4 +13,8 @@ export class HeaderComponent {
   goToSignUp() {
     this.router.navigate(['/sign-up-page']); // Replace 'sign-up' with your actual route path
   }
+  goToLogin(){
+    this.router.navigate(['/login-page']);
 }
+}
+  
