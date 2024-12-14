@@ -12,6 +12,53 @@
     z-index: 10; /* Make sure the header stays on top */
   }
 
+  // serach bar shit
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 0;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    transition: width 0.3s ease;
+    font-size: 14px;
+    opacity: 0;
+  }
+  
+  .search-button {
+    background-color: #28a745; /* Green background */
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container:hover .search-input {
+    width: 200px; /* Adjust as needed */
+    padding: 0 10px;
+    opacity: 1;
+  }
+  
+  .search-container:hover .search-button {
+    background-color: #218838; /* Slightly darker green on hover */
+  }
+  
+
+
+  
 
   /* Header Logo */
   .logo {
