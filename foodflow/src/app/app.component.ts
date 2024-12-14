@@ -14,7 +14,7 @@ export class AppComponent {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
-      this.showHomeContent = !['/sign-up-page', '/login-page'].includes(event.url);
+      this.showHomeContent = !['/sign-up-page', '/login-page','/about-us'].includes(event.url);
     });
   }
   goToSignUp() {
@@ -22,5 +22,8 @@ export class AppComponent {
   }
   goToLogin() {
     this.router.navigate(['/login-page']);
+  }
+  goToAboutUs(){
+    this.router.navigate(['/about-us']);
   }
 }

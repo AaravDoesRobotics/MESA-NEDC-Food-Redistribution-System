@@ -16,5 +16,8 @@ export class HeaderComponent {
   goToLogin(){
     this.router.navigate(['/login-page']);
 }
+  goToAboutUs(){
+    this.router.navigate(['/about-us']);
+}
 }
   
