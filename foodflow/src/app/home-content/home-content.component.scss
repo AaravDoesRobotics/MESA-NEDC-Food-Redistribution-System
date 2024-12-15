@@ -28,6 +28,7 @@ mat-card-header {
 mat-card-title {
   font-size: 20px; /* Larger title font */
   font-weight: bold; /* Bold title text */
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
   color: #333; /* Dark text color */
 }
 
@@ -49,6 +50,9 @@ mat-card-content {
   padding: 15px; /* Add padding around content */
   font-size: 16px; /* Slightly larger font for content */
   color: #444; /* Darker text color */
+  font-weight:bold;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  justify-content:center;
 }
 
 /* Card Actions Styling */
