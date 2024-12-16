@@ -1,6 +1,6 @@
 /* Header Styling */
  .header {
-    background: linear-gradient(135deg, green, white); /* Gradient background */
+    background:white; /* Gradient background */
     padding: 15px 30px; /* Spacing inside the header */
     color: black; /* Text color */
     display: flex;
@@ -114,16 +114,16 @@
   
   /* Hover effect for mat-button */
    .AboutUs:hover {
-    background-color: #2c6c2f;
+    background-color: lightgreen;
   }
   
   
   .SignUp:hover {
-    background-color: #2c6c2f;
+    background-color: lightgreen;
   }
   
   .Login:hover {
-    background-color: #2c6c2f;
+    background-color: lightgreen;
   }
 
   
@@ -192,7 +192,7 @@
 }
 .header-image img{
     width: 1500px;
-    height: auto;
+    height: 500px;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -204,9 +204,8 @@
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for centering */
     color: black; /* Text color */
-    font-size: 2em; /* Adjust text size */
+    font-size: 3em; /* Adjust text size */
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for better visibility */
     text-align: center;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
 

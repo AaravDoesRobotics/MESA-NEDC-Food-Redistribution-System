@@ -21,7 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-
+import { SendEmailComponent } from './send-emai.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,10 +31,12 @@ import { MatListModule } from '@angular/material/list';
     SignUpPageComponent,
     LandingPageComponent,
     LoginPageComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    
   ],
   imports: [
     BrowserModule,
+    SendEmailComponent,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,

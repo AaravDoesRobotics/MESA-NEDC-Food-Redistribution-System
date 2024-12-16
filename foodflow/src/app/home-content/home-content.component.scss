@@ -12,15 +12,36 @@ mat-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
   margin: 20px 0; /* Margin around each card */
 }
-
+.overlay-text {
+  position: absolute; /* Position relative to the parent */
+  top: 30%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  color: black; /* Text color */
+  font-size: 3em; /* Adjust text size */
+  font-weight: bold;
+  text-align: center;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+}
 mat-card:hover {
   transform: translateY(-5px); /* Lift the card up on hover */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
+mat-button {
+  background:black;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  text-align: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
 /* Card Header Styling */
 mat-card-header {
-  background: linear-gradient(135deg, green, white); /* Light background for header */
+  background: white; /* Light background for header */
   padding: 10px 15px; /* Padding inside the header */
   border-bottom: 1px solid #ddd; /* Subtle border separating header from content */
 }
@@ -39,10 +60,11 @@ mat-card-subtitle {
 
 /* Card Image Styling */
 mat-card img {
-  width: 750px; /* Full width for the image */
-  height: auto; /* Maintain aspect ratio */
+  width: 1500px; /* Full width for the image */
+  height: 250px; /* Maintain aspect ratio */
+  background-color:white;
   object-fit: cover; /* Ensure the image covers the space without distortion */
-  left: 25%;
+  justify-content:center;
 }
 
 /* Card Content Styling */
