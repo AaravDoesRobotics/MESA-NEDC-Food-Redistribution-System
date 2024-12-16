@@ -1,27 +1,26 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
 import { HeaderComponent } from './header/header.component';
 import { HomeContentComponent } from './home-content/home-content.component';
-import { MatInputModule } from '@angular/material/input';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { FooterComponent } from './footer/footer.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { FooterComponent } from './footer/footer.component';
-import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -32,30 +31,24 @@ import { AboutUsComponent } from './about-us/about-us.component';
     SignUpPageComponent,
     LandingPageComponent,
     LoginPageComponent,
-    AboutUsComponent,
-   
-    
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserModule,
-    BrowserAnimationsModule, 
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule
+    MatListModule
   ],
-  providers: [
-    provideClientHydration(withEventReplay()),
-    provideAnimationsAsync()
-  ],
+  providers: [], // Remove experimental features for now
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
