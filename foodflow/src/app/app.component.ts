@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router,NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import {  FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -29,4 +30,12 @@ export class AppComponent {
   goToSignUp1(){
     this.router.navigate(['/sign-up-page']);
 }
+submitForm() {
+  if (this.Form.valid) {
+    console.log(this.Form.value); // Access form values
+    // Your submission logic (e.g., HTTP request)
+  } else {
+    // Handle validation errors (e.g., display error messages)
+    console.log("form is invalid");
+  }
 }

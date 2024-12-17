@@ -12,7 +12,11 @@ import { Router } from '@angular/router';
 export class SignUpPageComponent {
   constructor(private router: Router) {}
   goToSignUp1(){
-    this.router.navigate(['/four-digit-code']);
+    const code = this.generateFourDigitCode();
+    this.router.navigate(['/four-digit-code'], { queryParams: { code: code } });
 }
-  
+generateFourDigitCode(): string {
+  // Generate your four-digit code logic here
+  return Math.floor(1000 + Math.random() * 9000).toString();
+}
 }
