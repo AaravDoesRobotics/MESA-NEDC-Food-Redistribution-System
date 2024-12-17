@@ -11,7 +11,6 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -33,11 +32,11 @@ import { FourDigitCodeComponent } from './four-digit-code/four-digit-code.compon
     LoginPageComponent,
     AboutUsComponent,
     FourDigitCodeComponent,
+    SignUpPageComponent, 
     
   ],
   imports: [
     BrowserModule,
-    SignUpPageComponent, 
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
