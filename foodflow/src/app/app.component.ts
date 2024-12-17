@@ -26,4 +26,7 @@ export class AppComponent {
   goToAboutUs(){
     this.router.navigate(['/about-us']);
   }
+  goToSignUp1(){
+    this.router.navigate(['/sign-up-page']);
+}
 }

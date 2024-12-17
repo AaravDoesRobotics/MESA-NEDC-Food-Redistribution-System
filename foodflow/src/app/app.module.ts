@@ -21,22 +21,23 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { SendEmailComponent } from './send-emai.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { FourDigitCodeComponent } from './four-digit-code/four-digit-code.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeContentComponent,
     FooterComponent,
-    SignUpPageComponent,
     LandingPageComponent,
     LoginPageComponent,
     AboutUsComponent,
+    FourDigitCodeComponent,
     
   ],
   imports: [
     BrowserModule,
-    SendEmailComponent,
+    SignUpPageComponent, 
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -50,7 +51,9 @@ import { SendEmailComponent } from './send-emai.component';
     MatSidenavModule,
     MatListModule
   ],
-  providers: [], // Remove experimental features for now
+  providers: [
+    provideAnimationsAsync()
+  ], // Remove experimental features for now
   bootstrap: [AppComponent]
 })
 export class AppModule {}
