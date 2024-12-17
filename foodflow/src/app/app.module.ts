@@ -22,6 +22,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { FourDigitCodeComponent } from './four-digit-code/four-digit-code.component';
+import {  FormBuilder, Validators } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
